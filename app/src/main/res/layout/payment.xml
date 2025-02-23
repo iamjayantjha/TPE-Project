@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl2"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple"
+    android:transitionName="screen">
+
+    <ImageView
+        android:id="@+id/paymentIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/creditcard"
+        android:contentDescription="@string/paymenticon" />
+
+    <TextView
+        android:id="@+id/payments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/paymentIcon"
+        android:layout_marginTop="15dp"
+        android:text="@string/payments"
+        android:fontFamily="@font/regular"
+        android:textSize="20sp"/>
+
+
+
+</RelativeLayout>

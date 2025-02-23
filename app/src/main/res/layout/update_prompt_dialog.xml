@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:maxHeight="700dp"
+    android:background="@color/dialog">
+
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bold"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <TextView
+        android:id="@+id/confirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/headerText"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/regular"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <View
+        android:id="@+id/secondLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/view"
+        android:layout_below="@id/confirmText"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondLine"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/notNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/thirdLine"
+            android:text="@string/not_now"
+            android:fontFamily="@font/regular"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+
+        <Button
+            android:id="@+id/okayBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/thirdLine"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/regular"
+            android:text="@string/okay" />
+
+        <View
+            android:id="@+id/thirdLine"
+            android:layout_width="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/notNow"
+            android:background="@color/view"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

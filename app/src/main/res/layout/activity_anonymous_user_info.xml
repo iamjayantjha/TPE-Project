@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activities.AnonymousUserInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/some_basic_details"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold"
+            android:textStyle="bold"/>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fnameTextLayout"
+            android:background="@drawable/no_background"
+            android:layout_width="match_parent"
+            android:layout_below="@id/heading"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor"
+            app:endIconMode="clear_text"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            app:startIconDrawable="?attr/user_icon"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/no_background"
+                android:textSize="12sp"
+                android:textColor="@color/cursor"
+                android:fontFamily="@font/regular"
+                android:textCursorDrawable="@drawable/cursor"
+                android:hint="@string/firstname" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lnameTextLayout"
+            android:background="@drawable/no_background"
+            android:layout_width="match_parent"
+            android:layout_below="@id/fnameTextLayout"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor"
+            app:endIconMode="clear_text"
+            android:layout_marginStart="5dp"
+            app:startIconDrawable="?attr/user_icon"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/no_background"
+                android:textSize="12sp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/cursor"
+                android:textCursorDrawable="@drawable/cursor"
+                android:hint="@string/lastname" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/countryTextLayout"
+            android:layout_below="@id/lnameTextLayout"
+            android:background="@drawable/no_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/cursor"
+            android:layout_marginStart="5dp"
+            app:startIconDrawable="@drawable/ic_country"
+            app:endIconMode="clear_text"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/countryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/no_background"
+                android:textColor="@color/cursor"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="12sp"
+                android:autofillHints="India"
+                android:fontFamily="@font/regular"
+                android:hint="@string/country"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/tos"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/countryTextLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/tos" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/nextBtn"
+            android:layout_width="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/regular"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="30dp"
+            android:layout_below="@+id/tos"
+            android:transitionName="button" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/nextIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_next"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_below="@+id/tos"
+            android:id="@+id/animationView"
+            android:layout_width="60dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_height="60dp"
+            app:lottie_fileName="loading.json"
+            android:layout_marginTop="30dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+
+        <TextView
+            android:id="@+id/termsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextBtn"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/bold"
+            android:text="@string/termsncondition"
+            android:textColor="@color/cursor"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/privacyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/bold"
+            android:text="@string/privacyPolicy"
+            android:textColor="@color/cursor"
+            android:textSize="18sp"
+            android:layout_marginBottom="25dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

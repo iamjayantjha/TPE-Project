@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SpeechActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/speech"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/regular"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/speechSettingsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        app:cardBackgroundColor="@color/cardColor"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/speechSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:text="@string/iWantSpeech"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/speechSettings"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/forEveryThing"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb2"
+                    android:fontFamily="@font/regular"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/atWakeUpCheck"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb3"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/regular"
+                    android:buttonTint="@color/white"
+                    android:text="@string/atWeather"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb4"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/never"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/speechVoiceSettingsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speechSettingsCard"
+        app:cardBackgroundColor="@color/cardColor"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/regular"
+                android:id="@+id/voiceSettingsHeading"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/process1"
+                android:text="@string/step1"
+                android:layout_below="@id/voiceSettingsHeading"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/process2"
+                android:text="@string/step2"
+                android:layout_below="@id/process1"
+                android:textColor="@color/white"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/process3"
+                android:text="@string/step3"
+                android:layout_below="@id/process2"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/process4"
+                android:text="@string/step4"
+                android:layout_below="@id/process3"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/process5"
+                android:text="@string/step5"
+                android:layout_below="@id/process4"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginBottom="15dp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

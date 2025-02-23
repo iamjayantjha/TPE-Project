@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/container_frame"
+    tools:context=".Activities.MethodActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:text="@string/methodPageHeading"
+                android:textSize="20sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/defaultCard"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/cardColor"
+        app:cardCornerRadius="20dp"
+        app:strokeColor="@color/cardStrokeColor"
+        app:strokeWidth="0.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/defaultMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:text="@string/defaultText" />
+
+            <ImageView
+                android:id="@+id/defaultRecommended"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="45dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/recommended"
+                android:contentDescription="@string/recommeded" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mathsCard"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:strokeColor="@color/cardStrokeColor"
+            app:strokeWidth="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/maths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/maths"
+                    android:textColor="@color/white"
+                    android:transitionName="titleText" />
+
+                <ImageView
+                    android:id="@+id/mathsRecommended"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="45dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/recommeded"
+                    android:src="@drawable/recommended"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/maths"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/mathsData"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/regular"/>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/shakeCard"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:strokeColor="@color/cardStrokeColor"
+            app:strokeWidth="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/shake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/shake"
+                    android:textColor="@color/white"
+                    android:transitionName="titleText" />
+
+                <ImageView
+                    android:id="@+id/shakeRecommended"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="45dp"
+                    android:contentDescription="@string/recommeded"
+                    android:visibility="gone"
+                    android:src="@drawable/recommended"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/barcodeCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/barcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/barCode"
+                        android:textColor="@color/white"
+                        android:transitionName="titleText" />
+
+
+                    <ImageView
+                        android:id="@+id/barcodeRecommended"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="45dp"
+                        android:contentDescription="@string/recommeded"
+                        android:visibility="gone"
+                        android:layout_toStartOf="@id/animationView1"
+                        android:src="@drawable/recommended" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView1"
+                        android:layout_width="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="25dp"
+                        app:lottie_fileName="lock.json"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="false"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+            android:id="@+id/walkCard"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:strokeColor="@color/cardStrokeColor"
+            app:strokeWidth="0.5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shakeCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/walk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:text="@string/walk"
+                    android:transitionName="titleText" />
+
+                <ImageView
+                    android:id="@+id/walkRecommended"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="45dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/recommeded"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/recommended"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/patternCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:strokeColor="@color/cardStrokeColor"
+            app:strokeWidth="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pattern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:text="@string/pattern"
+                    android:transitionName="titleText" />
+
+                <ImageView
+                    android:id="@+id/patternRecommended"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="45dp"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:contentDescription="@string/recommeded"
+                    android:src="@drawable/recommended"/>
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView2"
+                    android:layout_width="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="25dp"
+                    app:lottie_fileName="lock.json"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/textCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patternCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            app:cardBackgroundColor="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:strokeColor="@color/cardStrokeColor"
+            app:strokeWidth="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:text="@string/text"
+                    android:transitionName="titleText" />
+
+                <ImageView
+                    android:id="@+id/textRecommended"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="45dp"
+                    android:contentDescription="@string/recommeded"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/recommended"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView3"
+                    android:layout_width="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="25dp"
+                    app:lottie_fileName="lock.json"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/challengeCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textCard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/challenge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/white"
+                        android:text="@string/challengeMode"
+                        android:transitionName="titleText" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView4"
+                        android:layout_width="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="25dp"
+                        app:lottie_fileName="lock.json"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="false"/>
+
+
+                    <ImageView
+                        android:id="@+id/danger"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="39dp"
+                        android:contentDescription="@string/danger"
+                        android:src="@drawable/ic_danger" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:backgroundTint="@null"
+                android:layout_marginBottom="15dp"
+                android:text="SAVE"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/regular"/>
+
+    </LinearLayout>
+
+    </ScrollView>

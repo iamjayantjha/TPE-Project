@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <!-- Rotate animation -->
+    <rotate
+        android:duration="100"
+        android:fromDegrees="-10"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:toDegrees="10" />
+
+    <!-- Jump animation -->
+    <translate
+        android:duration="100"
+        android:fromYDelta="0%"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:startOffset="200"
+        android:toYDelta="-50%" />
+
+</set>

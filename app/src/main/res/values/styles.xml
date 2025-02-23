@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <item name="plus_icon">@drawable/pluslight</item>
+        <item name="settings_icon">@drawable/settingslight</item>
+        <item name="delete_icon">@drawable/binlight</item>
+        <item name="preview_icon">@drawable/eyelight</item>
+        <item name="seven_icon">@drawable/ic_sevenlight</item>
+        <item name="eight_icon">@drawable/ic_eightlight</item>
+        <item name="android:textColorPrimary">@color/defaultText</item>
+        <item name="nine_icon">@drawable/ic_ninelight</item>
+        <item name="six_icon">@drawable/ic_sixlight</item>
+        <item name="five_icon">@drawable/ic_fivelight</item>
+        <item name="four_icon">@drawable/ic_fourlight</item>
+        <item name="one_icon">@drawable/ic_onelight</item>
+        <item name="two_icon">@drawable/ic_twolight</item>
+        <item name="three_icon">@drawable/ic_threelight</item>
+        <item name="done_icon">@drawable/ic_donelight</item>
+        <item name="zero_icon">@drawable/ic_zerolight</item>
+        <item name="clear_icon">@drawable/ic_clearlight</item>
+        <item name="vibrate_icon">@drawable/ic_vibratelight</item>
+        <item name="location_icon">@drawable/ic_locationlight</item>
+        <item name="none_icon">@drawable/ic_nonelight</item>
+        <item name="email_icon">@drawable/ic_emaillight</item>
+        <item name="user_icon">@drawable/ic_userlight</item>
+        <item name="phone_icon">@drawable/ic_phonelight</item>
+        <item name="cred_icon">@drawable/creditcardlight</item>
+        <item name="up_icon">@drawable/ic_uplight</item>
+        <item name="call_icon">@drawable/phone_dark</item>
+        <item name="sleep_icon">@drawable/sleep</item>
+        <item name="zerostic_logo">@drawable/zerostic_night</item>
+        <item name="speech_icon">@drawable/speaking_dark</item>
+        <item name="add_icon">@drawable/add_friends_dark</item>
+        <item name="repeat">@drawable/ic_repeat_black_24dplight</item>
+        <item name="notRepeat">@drawable/ic_looks_one_black_24dplight</item>
+        <item name="expand">@drawable/ic_baseline_expand_more_24light</item>
+        <item name="ringAlarm">@drawable/ic_alarm_black_24dplight</item>
+        <item name="userIcon">@mipmap/ic_user_dark</item>
+        <item name="alarm_canceled">@drawable/alarm_canceled</item>
+        <item name="alarm">@drawable/alarm</item>
+        <item name="audioOn">@drawable/ic_audiodark</item>
+        <item name="audioOFF">@drawable/ic_audio_off_dark</item>
+        <item name="upload">@drawable/upload_dark</item>
+        <item name="remove">@drawable/remove_dark</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/background</item>
+    </style>
+
+    <style name="LaunchTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_drawable</item>
+    </style>
+
+  <!--  <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/choice_chip_background</item>
+        <item name="android:textColor">@color/text_color_choice_chip</item>
+
+    </style>-->
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+<!--
+    <style name="AppTheme.Chip" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">16sp</item>
+
+    </style>-->
+
+    <style name="AppTheme.Week" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">11.5sp</item>
+
+    </style>
+
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded</item>
+    </style>
+
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name=".Application.App"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+        android:fullBackupOnly="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="s">
+        <activity
+            android:name=".Activities.SleepDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AnonymousUserInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AlarmRestartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ClosingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.LifetimeMembershipActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.InviteFriendsActivity"
+            android:exported="true" />
+        <activity android:name=".Activities.CreditsActivity" />
+        <activity android:name=".Activities.LicensesActivity" />
+        <activity android:name=".Activities.SpeechActivity" />
+        <activity android:name=".Activities.AboutZerosticActivity" />
+        <activity android:name=".Activities.ContactUsActivity" />
+        <activity android:name=".Activities.WeatherSettingsActivity" />
+        <activity android:name=".Activities.MusicActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8018848352545847~2484509916" />
+
+        <activity android:name=".Activities.ChallengeActivity" />
+        <activity android:name=".Activities.STTActivity" />
+        <activity android:name=".Activities.ProfilePictureActivity" />
+        <activity android:name=".Activities.PaymentActivity" />
+
+        <service
+            android:name=".Service.FirebaseCloudMessagingService"
+            android:exported="false"
+            android:permission="TODO"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Activities.ProfileActivity" />
+        <activity android:name=".Activities.InformationActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.AlarmEditActivity" />
+        <activity android:name=".Activities.WeatherActivity" />
+        <activity android:name=".DismissActivities.TextDismissActivity" />
+        <activity android:name=".DismissActivities.PatternDismissActivity" />
+        <activity android:name=".DismissActivities.BarCodeDismissActivity" />
+        <activity android:name=".Activities.ScanBarCodeActivity" />
+        <activity android:name=".DismissActivities.WalkDismissActivity" />
+        <activity android:name=".DismissActivities.ShakeDismissActivity" />
+        <activity android:name=".Activities.AlarmPreviewActivity" />
+        <activity android:name=".Activities.MethodFunctionActivity" />
+        <activity android:name=".Activities.SettingsActivity" />
+        <activity android:name=".DismissActivities.MathsDismissActivity" />
+        <activity android:name=".Activities.AlarmToneActivity" />
+        <activity android:name=".Activities.CreateAlarmActivity" />
+        <activity android:name=".Activities.MethodActivity" />
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.AppIntroActivity" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="fullUser"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity">
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+            <meta-data
+                android:name="com.google.android.gms.vision.DEPENDENCIES"
+                android:value="barcode" />
+        </activity>
+        <activity android:name=".Activities.RingActivity" />
+        <activity android:name=".DismissActivities.WakeUpCheckDismissActivity" />
+
+        <receiver
+            android:name=".BroadCastReceiver.AlarmBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadCastReceiver.WakeUpReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Application.AlarmWidgetProvider"
+            android:exported="true"
+            android:label="Alarm Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/alarm_widget_info" />
+        </receiver>
+        <!--
+<receiver
+            android:name=".broadcastreceiver.AdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_receiver" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        -->
+        <service android:name=".Service.AlarmService" />
+        <service android:name=".Service.RescheduleAlarmsService" />
+    </application>
+
+</manifest>

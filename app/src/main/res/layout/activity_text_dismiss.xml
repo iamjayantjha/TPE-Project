@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".DismissActivities.TextDismissActivity">
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        android:layout_below="@id/timer"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:minHeight="50dp"
+        android:maxHeight="800dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/cardStrokeColor"
+        app:strokeWidth="0.5dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardColor"
+        android:layout_below="@id/type"
+        android:id="@+id/typeText">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="50dp"
+            android:maxHeight="800dp">
+
+            <EditText
+                android:id="@+id/typeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:minHeight="50dp"
+                android:maxHeight="800dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/no_background"
+                android:textColor="@color/white"
+                android:fontFamily="@font/regular"
+                android:textColorHint="@color/white"
+                android:hint="@string/write_the_above_text_here"
+                android:textCursorDrawable="@drawable/cursor"
+                android:autofillHints=""
+                android:inputType="none" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DONE"
+        android:id="@+id/doneBtn"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/typeText"
+        android:transitionName="button"
+        android:textColor="@color/black"
+        android:backgroundTint="@null"
+        app:cornerRadius="100dp"
+        android:fontFamily="@font/regular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charVal"
+        android:layout_below="@id/doneBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/selected"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

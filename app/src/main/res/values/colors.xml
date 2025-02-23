@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="background">#0E0E0E</color>-->
+    <color name="background">#011222</color>
+    <color name="colorPrimary">#FFF</color>
+    <color name="modelight">#ED86FF</color>
+    <color name="modelightAlarm">#cdcdcd</color>
+    <color name="colorPrimaryDark">#0E0E0E</color>
+    <color name="black">#000000</color>
+    <color name="dialogHeader">#FFFFFF</color>
+    <color name="closingActivityColor">#0E0E0E</color>
+    <color name="titleText">#D1D1D1</color>
+    <color name="cursor">#FFFFFF</color>
+    <color name="gray">#6C6C6C</color>
+    <color name="colorAccent">#000</color>
+    <color name="dots">#DFDFDF</color>
+    <color name="solid_light_color">#24242A</color>
+    <color name="solid_dark_color">#101015</color>
+    <color name="stroke_color">#0E0E0E</color>
+    <!--    <color name="textColor">#f9d3b4</color>-->
+    <color name="textColor">#FF651C</color>
+    <color name="refundColor">#FF651C</color>
+    <color name="error">#FF0000</color>
+    <color name="selected">#4CAF50</color>
+    <color name="viewColour">#D1D1D1</color>
+    <color name="neumorphText">#0E0E0E</color>
+    <color name="dialog">#9F0E0E0E</color>
+    <color name="modeDark">#41004C</color>
+    <color name="modeDarkAlarm">#FF651C</color>
+    <color name="humidityStroke">#AFB1D8</color>
+    <color name="cardColor">#313050</color>
+    <color name="navigationCardColor">#171717</color>
+    <color name="chipColor">#B3323232</color>
+    <color name="fabColor">#000000</color>
+    <color name="view">#FFFFFF</color>
+    <color name="sunsetsunriseStroke">#FFED00</color>
+    <color name="buttonBG">#E4D7B1</color>
+    <color name="weatherstatus">#70E7E5</color>
+    <color name="newcol">#00004C</color>
+    <color name="weathertext">#FFFFFF</color>
+    <color name="windStroke">#D967AF</color>
+    <color name="defaultText">#FFFFFF</color>
+    <color name="bg">#1b1c1e</color>
+    <color name="glass">#61000000</color>
+    <color name="cardStrokeColor">#313050</color>
+</resources>

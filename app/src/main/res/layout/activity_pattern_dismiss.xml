@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".DismissActivities.PatternDismissActivity">
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/rowOne"
+        android:layout_below="@+id/timer"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questOne"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueOne"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questTwo"
+            android:layout_toRightOf="@id/questOne"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueTwo"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rowOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questThree"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueThree"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questFour"
+            android:layout_toRightOf="@id/questThree"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueFour"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowThree"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rowTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questFive"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueFive"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questSix"
+            android:layout_toEndOf="@id/questFive"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueSix"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowFour"
+        android:layout_below="@id/rowThree"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questSeven"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueSeven"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questEight"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp"
+            android:layout_toEndOf="@id/questSeven">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueEight"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rowFive"
+        android:layout_below="@id/rowFour"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questNine"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueNine"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="120dp"
+            android:id="@+id/questTen"
+            app:cardBackgroundColor="@color/cardColor"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="120dp"
+            android:layout_toEndOf="@id/questNine">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/valueTen"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

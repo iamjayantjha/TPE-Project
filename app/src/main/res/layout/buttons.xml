@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="wrap_content">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rowCount="4"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeven"
+            android:src="@drawable/ic_seven"
+            app:cornerRadius="300dp"
+            app:backgroundTint="@color/white"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:text="7"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEight"
+            android:src="@drawable/ic_eight"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="8"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNine"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"
+            app:backgroundTint="@color/white"
+            android:text="9"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFour"
+            android:text="4"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFive"
+            android:text="5"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSix"
+            android:text="6"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOne"
+            android:text="1"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTwo"
+            android:text="2"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnThree"
+            android:text="3"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClear"
+            android:text="del"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            android:contentDescription="@string/clear_icon"
+            android:src="@drawable/ic_clear"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:backgroundTint="@color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnZero"
+            android:text="0"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerInside"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDone"
+            android:text="@string/tick"
+            android:fontFamily="@font/semibold"
+            android:textSize="20sp"
+            app:cornerRadius="300dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/white"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:backgroundTint="#3F51B5"
+            android:scaleType="centerInside"/>
+    </GridLayout>
+
+</RelativeLayout>

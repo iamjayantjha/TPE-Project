@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded">
+
+
+        <!--<com.view.circulartimerview.CircularTimerView
+            android:id="@+id/timer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:progressColor="@color/selected"
+            app:backgroundColor="@color/background"
+            app:progressBackgroundColor="@color/cardColor"
+            app:backgroundWidth="8"
+            app:isClockwise="true"
+            app:textSize="18sp"
+            app:suffix="sec"
+            app:roundedCorners="false"
+            app:startingPoint="bottom"
+            android:layout_centerHorizontal="true"/>-->
+
+        <com.view.circulartimerview.CircularTimerView
+            android:id="@+id/timer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:visibility="visible"
+            app:backgroundColor="@color/background"
+            app:isClockwise="false"
+            app:maxValue="100"
+            app:progressBackgroundColor="@color/selected"
+            android:layout_centerHorizontal="true"
+            app:progressColor="@android:color/white"
+            app:progressTextColor="@color/selected"
+            app:roundedCorners="false"
+            app:startingPoint="top"
+            app:textSize="18sp"/>
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/dismissBtn"
+            android:layout_below="@+id/timer"
+            android:layout_margin="15dp"
+            app:text="I'm Up!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            app:outer_color="@color/cardColor"
+            app:inner_color="@color/white"
+            app:slider_icon_color="@color/black"
+            app:animation_duration="250"
+            app:slider_locked="false"
+            app:slider_icon="@drawable/ic_goodmorning_logo_svg"
+            app:icon_margin="12dp"/>
+
+
+</RelativeLayout>

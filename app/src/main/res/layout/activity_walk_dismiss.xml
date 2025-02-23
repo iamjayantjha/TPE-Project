@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/solid_dark_color"
+    tools:context=".DismissActivities.WalkDismissActivity">
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@id/timer"
+        android:layout_above="@id/steps"
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="walk.json"
+        android:layout_marginTop="15dp"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/steps"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/selected"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cheating"
+        android:text="No Cheating"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/error"
+        android:visibility="gone"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

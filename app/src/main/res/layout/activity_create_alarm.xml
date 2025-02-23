@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_frame"
+    android:scrollbars="vertical"
+    android:background="@color/background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="750dp">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:chipSpacingHorizontal="2dp"
+                    app:singleLine="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sun"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/sun"
+                        android:backgroundTint="@color/choice_chip_background"
+                        app:chipStrokeColor="@color/chip_stroke"
+                        app:chipStrokeWidth="1dp"
+                        android:textAppearance="@style/AppTheme.Week"
+                        android:textColor="@color/text_color_choice_chip"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/mon"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/mon"
+                        android:backgroundTint="@color/choice_chip_background"
+                        app:chipStrokeColor="@color/chip_stroke"
+                        app:chipStrokeWidth="1dp"
+                        android:textAppearance="@style/AppTheme.Week"
+                        android:textColor="@color/text_color_choice_chip" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/tue"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/tue"
+                        android:backgroundTint="@color/choice_chip_background"
+                        app:chipStrokeColor="@color/chip_stroke"
+                        app:chipStrokeWidth="1dp"
+                        android:textAppearance="@style/AppTheme.Week"
+                        android:textColor="@color/text_color_choice_chip" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/wed"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/wed"
+                        android:backgroundTint="@color/choice_chip_background"
+                        app:chipStrokeColor="@color/chip_stroke"
+                        app:chipStrokeWidth="1dp"
+                        android:textAppearance="@style/AppTheme.Week"
+                        android:textColor="@color/text_color_choice_chip" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/thu"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/thu"
+                        android:backgroundTint="@color/choice_chip_background"
+                        app:chipStrokeColor="@color/chip_stroke"
+                        app:chipStrokeWidth="1dp"
+                        android:textAppearance="@style/AppTheme.Week"
+                        android:textColor="@color/text_color_choice_chip"  />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/fri"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/fri"
+                        android:backgroundTint="@color/choice_chip_background"
+                        app:chipStrokeColor="@color/chip_stroke"
+                        app:chipStrokeWidth="1dp"
+                        android:textAppearance="@style/AppTheme.Week"
+                        android:textColor="@color/text_color_choice_chip" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sat"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/sat"
+                        android:textAppearance="@style/AppTheme.Week"
+                        android:backgroundTint="@color/choice_chip_background"
+                        app:chipStrokeColor="@color/chip_stroke"
+                        app:chipStrokeWidth="1dp"
+                        android:textColor="@color/text_color_choice_chip"  />
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/alarmTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm"
+                android:textColor="@color/defaultText"
+                android:fontFamily="@font/regular"
+                android:layout_below="@id/horizontalScrollView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/editTitle"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/alarmTitle"
+                android:layout_below="@id/horizontalScrollView"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/edit_alarm_title"
+                android:src="@drawable/edit"/>
+
+            <TimePicker
+                android:id="@+id/fragment_createalarm_timePicker"
+                android:layout_width="230dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/alarmTitle"
+                android:fontFamily="@font/regular"
+                android:layout_centerHorizontal="true"
+                android:timePickerMode="spinner" />
+
+            <TextView
+                android:id="@+id/ringsIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/defaultText"
+                android:fontFamily="@font/regular"
+                android:layout_below="@+id/fragment_createalarm_timePicker"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox
+                android:id="@+id/fragment_createalarm_recurring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_createalarm_timePicker"
+                android:layout_centerHorizontal="true"
+                android:text="Weekdays"
+                android:visibility="gone" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/methodCard"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ringsIn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/cardColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+
+                        <TextView
+                            android:id="@+id/method_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/bold"
+                            android:text="Method ->"
+                            android:textColor="@color/defaultText"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/method"
+                            android:layout_width="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/regular"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/method_title"
+                            android:textColor="@color/defaultText" />
+
+                        <!--   <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentEnd="true"
+                               android:layout_centerVertical="true"
+                               android:layout_marginEnd="15dp"
+                               android:src="?attr/next_icon" />-->
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/alarmToneCard"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_below="@+id/methodCard"
+                app:cardElevation="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="@color/cardColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp">
+
+
+                        <TextView
+                            android:id="@+id/alarmToneTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/bold"
+                            android:textColor="@color/defaultText"
+                            android:layout_centerHorizontal="true"
+                            android:text="Alarm Tone"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/alarmToneText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/defaultText"
+                            android:fontFamily="@font/regular"
+                            android:layout_centerHorizontal="true"
+                            android:text="Gradually Increasing 6"
+                            android:layout_below="@id/alarmToneTitle"/>
+
+                        <!--                    <ImageView-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_alignParentRight="true"-->
+                        <!--                        android:layout_centerVertical="true"-->
+                        <!--                        android:layout_marginRight="15dp"-->
+                        <!--                        android:contentDescription="nextPage"-->
+                        <!--                        android:src="?attr/next_icon" />-->
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/methodCard"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/alarmToneCard">
+
+                <SeekBar
+                    android:id="@+id/volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="4dp"
+                    android:progressDrawable="@drawable/seekbar_track"
+                    android:min="1"
+                    android:max="10"
+                    android:progress="10"
+                    android:thumb="@android:color/transparent" />
+
+                <ImageView
+                    android:id="@+id/sound"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sound"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/snoozeCard"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/alarmToneCard"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="15dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                app:cardBackgroundColor="@color/cardColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/snoozeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/regular"
+                        android:text="Snooze Time :"
+                        android:textColor="@color/defaultText"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/snoozeTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/snoozeTitle"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/defaultText"
+                        android:text="Off"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="nextPage"
+                        android:src="@drawable/ic_next_grey" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/wakeUpCheckCard"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/snoozeCard"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                app:cardElevation="0dp"
+                android:layout_marginTop="15dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                app:cardBackgroundColor="@color/cardColor">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/wakeUpCheckTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/regular"
+                        android:text="Wake Up Check :"
+                        android:textColor="@color/defaultText"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/wakeUpCheckTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/wakeUpCheckTitle"
+                        android:textSize="15sp"
+                        android:textColor="@color/defaultText"
+                        android:fontFamily="@font/regular"/>
+
+                    <ImageView
+                        android:id="@+id/wucRecommended"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/recommended"
+                        android:layout_toStartOf="@+id/nextImg"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/wakeUpCheckTitleText"
+                        android:contentDescription="@string/recommeded" />
+
+                    <ImageView
+                        android:id="@+id/nextImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="@string/nextpage"
+                        android:src="@drawable/ic_next_grey" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        android:visibility="gone"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/fragment_createalarm_scheduleAlarm"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/wakeUpCheckCard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/regular"
+                android:layout_alignParentBottom="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="30dp"
+                android:textColor="@color/textColor"
+                android:transitionName="button" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Schedule Smart Alarm"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+</ScrollView>

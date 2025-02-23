@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:minHeight="60dp"
+        app:cardBackgroundColor="@color/cardColor"
+        android:id="@+id/alarmTitle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/alarmTitleText"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/cursor"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/regular"
+                android:maxLength="15"
+                android:minHeight="60dp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:layout_height="wrap_content"
+                android:background="@drawable/no_background"
+                android:autofillHints="none"
+                android:inputType="text" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@null"
+        android:layout_marginBottom="15dp"
+        android:text="Save"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="30dp"
+        android:layout_below="@id/alarmTitle"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/regular"/>
+
+</RelativeLayout>

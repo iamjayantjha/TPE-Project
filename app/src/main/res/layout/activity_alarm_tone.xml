@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:isScrollContainer="true"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context=".Activities.AlarmToneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text="@string/alarm_tone_heading"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/regular"
+            android:layout_alignParentStart="true"
+            android:textAlignment="center"
+            android:layout_toStartOf="@id/audioBtn"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/audioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_audiodark"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:tag="@string/on"
+            android:contentDescription="@string/to_play" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/toneList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"/>
+
+
+    <!--    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:text="@string/alarm_tone_heading"
+            android:fontFamily="@font/regular"
+            android:textSize="20sp" />
+
+
+            <ImageView
+                android:id="@+id/audioOnBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/audioOn"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/to_play" />
+
+            <ImageView
+                android:id="@+id/audioOFFBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="?attr/audioOFF"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone"
+                android:contentDescription="@string/to_play" />
+
+
+        <LinearLayout
+            android:id="@+id/toneList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/heading"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/defaultCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/defaultTone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:text="Default"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/defaultSelected"
+                        android:textColor="@color/selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/alarm_clock_Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/alarm_clock_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/white"
+                        android:text="Alarm Clock" />
+
+                    <TextView
+                        android:id="@+id/alarm_clock_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/alarm_clock_old_Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/alarm_clock_old_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"
+                        android:text="Alarm Clock Old" />
+
+                    <TextView
+                        android:id="@+id/alarm_clock_old_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/beepsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/beeps_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/white"
+                        android:text="Beeps" />
+
+                    <TextView
+                        android:id="@+id/beepsSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/sirenCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/siren_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"
+                        android:text="Siren" />
+
+                    <TextView
+                        android:id="@+id/sirenSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tuningCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tuning_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"
+                        android:text="Tuning" />
+
+                    <TextView
+                        android:id="@+id/tuningSelected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/gradually_increasing_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_1_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"
+                        android:text="Gradually Increasing 1" />
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_1_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView1"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        android:visibility="gone"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/gradually_increasing_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_2_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"
+                        android:text="Gradually Increasing 2" />
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_2_Selected"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/gradually_increasing_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_3_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"
+                        android:text="Gradually Increasing 3" />
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_3_Selected"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/gradually_increasing_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_4_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Gradually Increasing 4" />
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_4_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView2"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        android:visibility="gone"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/gradually_increasing_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_5_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/regular"
+                        android:text="Gradually Increasing 5" />
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_5_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/gradually_increasing_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_6_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Gradually Increasing 6" />
+
+                    <TextView
+                        android:id="@+id/gradually_increasing_6_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView3"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        android:visibility="gone"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loud_alarm_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loud_alarm_1_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:text="Loud Alarm 1" />
+
+                    <TextView
+                        android:id="@+id/loud_alarm_1_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView4"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        android:visibility="gone"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loud_alarm_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loud_alarm_2_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        android:text="Loud Alarm 2"
+                        android:fontFamily="@font/regular"/>
+
+                    <TextView
+                        android:id="@+id/loud_alarm_2_Selected"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView5"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        android:visibility="gone"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loud_alarm_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loud_alarm_3_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        android:text="Loud Alarm 3"
+                        android:fontFamily="@font/regular"/>
+
+                    <TextView
+                        android:id="@+id/loud_alarm_3_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView6"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        android:visibility="gone"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loud_alarm_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loud_alarm_4_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/regular"
+                        android:textColor="@color/white"
+                        android:scrollHorizontally="true"
+                        android:text="Loud Alarm 4" />
+
+                    <TextView
+                        android:id="@+id/loud_alarm_4_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/tick"
+                        android:textColor="@color/selected"
+                        android:visibility="gone" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView7"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        android:visibility="gone"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loud_alarm_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loud_alarm_5_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        android:text="Loud Alarm 5"
+                        android:fontFamily="@font/regular"/>
+
+                    <TextView
+                        android:id="@+id/loud_alarm_5_Selected"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loud_alarm_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loud_alarm_6_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        android:text="Loud Alarm 6"
+                        android:fontFamily="@font/regular"/>
+
+                    <TextView
+                        android:id="@+id/loud_alarm_6_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/loud_alarm_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:strokeColor="@color/cardStrokeColor"
+                app:strokeWidth="0.5dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/loud_alarm_7_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/white"
+                        android:text="Loud Alarm 7"
+                        android:fontFamily="@font/regular"/>
+
+                    <TextView
+                        android:id="@+id/loud_alarm_7_Selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/selected"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tick"
+                        android:visibility="gone"
+                        android:fontFamily="@font/regular"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView8"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="15dp"
+                        app:lottie_autoPlay="true"
+                        android:visibility="gone"
+                        app:lottie_fileName="lock.json"
+                        app:lottie_loop="false" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:backgroundTint="@null"
+                android:layout_marginBottom="15dp"
+                android:text="SAVE"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/regular"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>-->
+
+</LinearLayout>

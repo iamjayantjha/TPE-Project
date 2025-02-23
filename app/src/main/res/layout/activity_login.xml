@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/login_screen"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextLayout"
+        android:background="@drawable/no_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="450dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/heading"
+        app:endIconMode="clear_text"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_background"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/regular"
+            android:maxWidth="450dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextLayout"
+        android:layout_below="@id/emailTextLayout"
+        android:background="@drawable/no_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="450dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/white"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/no_background"
+            android:textColor="@color/white"
+            android:maxWidth="450dp"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="18sp"
+            android:fontFamily="@font/regular"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTextLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="35dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/bold"
+        android:text="@string/resetPassword"/>
+
+<!--
+    <soup.neumorphism.NeumorphFloatingActionButton
+        android:id="@+id/nextBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_below="@+id/forgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="?attr/next_icon"
+        app:neumorph_shadowColorDark="@color/solid_dark_color"
+        app:neumorph_shadowColorLight="@color/solid_light_color"
+        app:neumorph_strokeColor="@color/stroke_color"
+        app:neumorph_strokeWidth="1dp"
+        android:contentDescription="@string/login"/>-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/nextBtn"
+        android:layout_width="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/regular"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        android:layout_below="@+id/forgotPassword"
+        android:transitionName="button" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/nextIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_next"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@+id/forgotPassword"
+        android:id="@+id/animationView"
+        android:layout_width="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+        app:lottie_fileName="loading.json"
+        android:layout_marginTop="30dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/noAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextBtn"
+        android:fontFamily="@font/bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/noAccount"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/continueWithoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/noAccount"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:cardElevation="0dp"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/cardColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/regular"
+                android:text="@string/continue_without_login"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_next_grey"
+                android:contentDescription="@string/nexticon"
+                android:layout_toEndOf="@id/text"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="createAlarm"
+        android:enabled="true"
+        android:icon="@drawable/ic_alarm_black_24dp"
+        android:shortcutShortLabel="@string/createAlarm"
+        android:shortcutLongLabel="@string/createAlarm" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:targetPackage="com.zerostic.goodmorning"
+        android:targetClass="com.zerostic.goodmorning.Activities.CreateAlarmActivity"/>
+
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="alarms"
+        android:enabled="true"
+        android:icon="@drawable/ic_alarm_black_24dp"
+        android:shortcutShortLabel="@string/alarms"
+        android:shortcutLongLabel="@string/alarms" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.zerostic.goodmorning"
+            android:targetClass="com.zerostic.goodmorning.Activities.MainActivity"/>
+
+    </shortcut>
+
+
+</shortcuts>

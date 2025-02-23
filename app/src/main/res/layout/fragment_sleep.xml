@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SleepFragment"
+    android:background="@color/background">
+
+    <!--<TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/regular"
+        android:text="This page is to help you sleep well."
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/heading"
+        android:id="@+id/sleepImage"
+        android:src="?attr/sleep_icon"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sleepTricksCard"
+        android:layout_below="@id/sleepImage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Sleep Tricks"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"/>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sleepTonesCard"
+        android:layout_width="match_parent"
+        android:layout_below="@id/sleepTricksCard"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Sleep Tones"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"/>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/musicCard"
+        android:layout_width="match_parent"
+        android:layout_below="@id/sleepTonesCard"
+        android:layout_height="80dp"
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Music"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"/>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>-->
+
+    <com.zerostic.goodmorning.Application.CircularSlider
+        android:id="@+id/circularSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

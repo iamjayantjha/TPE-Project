@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_4_xl" />
+        <device id="pixel" />
+        <device id="pixel_xl" />
+        <device id="Nexus 7" />
+        <device id="pixel_3a_xl" />
+        <device id="Nexus 6" />
+        <device id="pixel_3_xl" />
+        <device id="Nexus 10" />
+        <device id="Nexus 9" />
+        <device id="pixel_2" />
+        <target>android-31</target>
+      </config>
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bar_code_dismiss.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_contact_us.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_information.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_method_function.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_scan_bar_code.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/alarm_widget_layout.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_listalarms.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_alarm.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/payment.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/xml/alarm_widget_info.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e95b563-62ee-41b0-a351-01bac5967dd7" name="Default Changelist" comment="Updated Bar Code Scanner">
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zerostic/goodmorning/Application/AnalogClockView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/add_alarm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/alarm_widget.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/todo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/aylpvtb7ouzkwsychwxvld4d3/buildfingerprint.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/aylpvtb7ouzkwsychwxvld4d3/entry.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/aylpvtb7ouzkwsychwxvld4d3/projectfingerprint.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/aylpvtb7ouzkwsychwxvld4d3/work.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/release/app-release.aab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zerostic/goodmorning/Activities/CreateAlarmActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zerostic/goodmorning/Activities/CreateAlarmActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zerostic/goodmorning/Application/AlarmWidgetProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zerostic/goodmorning/Application/AlarmWidgetProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/alarm_widget_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/alarm_widget_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/attr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/attr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=/Users/iamjayantjha/.android/avd/Pixel_9_Pro_Android_11.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Good Morning" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Good Morning" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Good Morning" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Library/CloudStorage/OneDrive-Personal/ZEST/good_morning.jks" />
+    <option name="KEY_ALIAS" value="good_morning" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;iamjayantjha&quot;
+  }
+}</component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/iamjayantjha/Good-Morning-NEW.git&quot;,
+    &quot;accountId&quot;: &quot;7780daa1-e7ff-4c25-82d5-31fa676db6a7&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/src/main/java/com/zerostic/goodmorning/activities/SettingsActivity.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="1qnO9Nvp6IOQHHJBtv4po8tn8sd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;ApkExportedModule&quot;: &quot;Good_Morning.app&quot;,
+    &quot;BundleExportedModule&quot;: &quot;Good_Morning.app&quot;,
+    &quot;ExportApk.ApkPathForGood_Morning.app&quot;: &quot;C:\\Users\\Jayan\\AndroidStudioProjects\\Good-Morning-NEW\\app&quot;,
+    &quot;ExportBundle.BundlePathForGood_Morning.app&quot;: &quot;/Users/iamjayantjha/StudioProjects/Good-Morning-NEW/app/release&quot;,
+    &quot;PROJECT_TRUSTED_KEY&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.android.tools.idea.streaming.zoom.toolbar.visible&quot;: &quot;false&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;recommended.upgrade.last.time.stamp&quot;: &quot;1675774950835&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ExportApk.BuildVariants&quot;: [
+      &quot;release&quot;
+    ],
+    &quot;com.android.tools.idea.sqlite.queryhistory&quot;: [
+      &quot;DELETE FROM alarm_hr_min;&quot;,
+      &quot;DELETE FROM alarm_table;&quot;,
+      &quot;DELETE from recurring_days&quot;,
+      &quot;DELETE from alarm_hr_min&quot;,
+      &quot;DELETE from alarm_table&quot;
+    ]
+  }
+}</component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="BUILD_VARIANTS_TAB" value="Flavors" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1455878387">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-662412713">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.942924725">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.804512979">
+      <recent name="com.zerostic.goodmorning" />
+    </key>
+    <key name="android.template.2140267833">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.1164628164">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.1196842237">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-959961090">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.1050992183">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-1765739545">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.zerostic.goodmorning.application" />
+    </key>
+    <key name="android.template.-148582961">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.1109204596">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-2065940311">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.466042263">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.111105465">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zerostic.goodmorning.activities" />
+      <recent name="com.zerostic.goodmorning.data" />
+    </key>
+    <key name="android.template.-1374056914">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-942932728">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.1364854806">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jayan\StudioProjects\Good-Morning\app\src\main\assets" />
+    </key>
+    <key name="android.template.-534228021">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-242888205">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-37238184">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.1224035775">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.438991478">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-19395479">
+      <recent name="com.zerostic.goodmorning" />
+    </key>
+    <key name="android.template.-2116586168">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-1929957968">
+      <recent name="com.zerostic.goodmorning.activities" />
+    </key>
+    <key name="android.template.-1161262349">
+      <recent name="com.zerostic.goodmorning.activities.Main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Good_Morning.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main:app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Main:app [signingReport]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e95b563-62ee-41b0-a351-01bac5967dd7" name="Default Changelist" comment="" />
+      <created>1617711734321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617711734321</updated>
+      <workItem from="1623264029723" duration="1491000" />
+      <workItem from="1623265589472" duration="121000" />
+      <workItem from="1623346534432" duration="6000" />
+      <workItem from="1623510129794" duration="5000" />
+      <workItem from="1623614515305" duration="9000" />
+      <workItem from="1624637354333" duration="8000" />
+    </task>
+    <task id="LOCAL-00421" summary="Change Image Bottom Sheet is working properly">
+      <created>1634249370327</created>
+      <option name="number" value="00421" />
+      <option name="presentableId" value="LOCAL-00421" />
+      <option name="project" value="LOCAL" />
+      <updated>1634249370327</updated>
+    </task>
+    <task id="LOCAL-00422" summary="Upload Image Added">
+      <created>1634250757866</created>
+      <option name="number" value="00422" />
+      <option name="presentableId" value="LOCAL-00422" />
+      <option name="project" value="LOCAL" />
+      <updated>1634250757866</updated>
+    </task>
+    <task id="LOCAL-00423" summary="Remove Image Added">
+      <created>1634251049271</created>
+      <option name="number" value="00423" />
+      <option name="presentableId" value="LOCAL-00423" />
+      <option name="project" value="LOCAL" />
+      <updated>1634251049271</updated>
+    </task>
+    <task id="LOCAL-00424" summary="Remove Image Added">
+      <created>1634251101349</created>
+      <option name="number" value="00424" />
+      <option name="presentableId" value="LOCAL-00424" />
+      <option name="project" value="LOCAL" />
+      <updated>1634251101349</updated>
+    </task>
+    <task id="LOCAL-00425" summary="Weather Setting Text Font Changed">
+      <created>1634252127444</created>
+      <option name="number" value="00425" />
+      <option name="presentableId" value="LOCAL-00425" />
+      <option name="project" value="LOCAL" />
+      <updated>1634252127444</updated>
+    </task>
+    <task id="LOCAL-00426" summary="Profile picture completed now....">
+      <created>1634254217912</created>
+      <option name="number" value="00426" />
+      <option name="presentableId" value="LOCAL-00426" />
+      <option name="project" value="LOCAL" />
+      <updated>1634254217913</updated>
+    </task>
+    <task id="LOCAL-00427" summary="long click for upload and remove added successfully.">
+      <created>1634254490201</created>
+      <option name="number" value="00427" />
+      <option name="presentableId" value="LOCAL-00427" />
+      <option name="project" value="LOCAL" />
+      <updated>1634254490201</updated>
+    </task>
+    <task id="LOCAL-00428" summary="Moved to android 12 sdk">
+      <created>1634385415363</created>
+      <option name="number" value="00428" />
+      <option name="presentableId" value="LOCAL-00428" />
+      <option name="project" value="LOCAL" />
+      <updated>1634385415364</updated>
+    </task>
+    <task id="LOCAL-00429" summary="Password must be at least 6 characters long">
+      <created>1634515003779</created>
+      <option name="number" value="00429" />
+      <option name="presentableId" value="LOCAL-00429" />
+      <option name="project" value="LOCAL" />
+      <updated>1634515003780</updated>
+    </task>
+    <task id="LOCAL-00430" summary="Time added successfully in Ring and Restart Activity.">
+      <created>1634767407212</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1634767407214</updated>
+    </task>
+    <task id="LOCAL-00431" summary="Texts updated for method function activity">
+      <created>1634768616840</created>
+      <option name="number" value="00431" />
+      <option name="presentableId" value="LOCAL-00431" />
+      <option name="project" value="LOCAL" />
+      <updated>1634768616840</updated>
+    </task>
+    <task id="LOCAL-00432" summary="Texts updated for method function activity">
+      <created>1634772746990</created>
+      <option name="number" value="00432" />
+      <option name="presentableId" value="LOCAL-00432" />
+      <option name="project" value="LOCAL" />
+      <updated>1634772746991</updated>
+    </task>
+    <task id="LOCAL-00433" summary="Snooze time problem solved">
+      <created>1634774318280</created>
+      <option name="number" value="00433" />
+      <option name="presentableId" value="LOCAL-00433" />
+      <option name="project" value="LOCAL" />
+      <updated>1634774318280</updated>
+    </task>
+    <task id="LOCAL-00434" summary="Title Changes automatically problem solved">
+      <created>1634774909227</created>
+      <option name="number" value="00434" />
+      <option name="presentableId" value="LOCAL-00434" />
+      <option name="project" value="LOCAL" />
+      <updated>1634774909227</updated>
+    </task>
+    <task id="LOCAL-00435" summary="Rings in text in create alarm problem solved">
+      <created>1634775432831</created>
+      <option name="number" value="00435" />
+      <option name="presentableId" value="LOCAL-00435" />
+      <option name="project" value="LOCAL" />
+      <updated>1634775432831</updated>
+    </task>
+    <task id="LOCAL-00436" summary="Closing Activity Colour Problem Solved">
+      <created>1634775777003</created>
+      <option name="number" value="00436" />
+      <option name="presentableId" value="LOCAL-00436" />
+      <option name="project" value="LOCAL" />
+      <updated>1634775777003</updated>
+    </task>
+    <task id="LOCAL-00437" summary="Colour problem in Navigation Bar Solved">
+      <created>1634776004049</created>
+      <option name="number" value="00437" />
+      <option name="presentableId" value="LOCAL-00437" />
+      <option name="project" value="LOCAL" />
+      <updated>1634776004049</updated>
+    </task>
+    <task id="LOCAL-00438" summary="Snooze Problem Fixed">
+      <created>1635870682937</created>
+      <option name="number" value="00438" />
+      <option name="presentableId" value="LOCAL-00438" />
+      <option name="project" value="LOCAL" />
+      <updated>1635870682938</updated>
+    </task>
+    <task id="LOCAL-00439" summary="Snooze depends on Type of Sleeper">
+      <created>1635872636386</created>
+      <option name="number" value="00439" />
+      <option name="presentableId" value="LOCAL-00439" />
+      <option name="project" value="LOCAL" />
+      <updated>1635872636386</updated>
+    </task>
+    <task id="LOCAL-00440" summary="Release Version 8.3.2 Completed">
+      <created>1636262837558</created>
+      <option name="number" value="00440" />
+      <option name="presentableId" value="LOCAL-00440" />
+      <option name="project" value="LOCAL" />
+      <updated>1636262837558</updated>
+    </task>
+    <task id="LOCAL-00441" summary="New Changes">
+      <created>1640710895368</created>
+      <option name="number" value="00441" />
+      <option name="presentableId" value="LOCAL-00441" />
+      <option name="project" value="LOCAL" />
+      <updated>1640710895370</updated>
+    </task>
+    <task id="LOCAL-00442" summary="New Changes">
+      <created>1640710973647</created>
+      <option name="number" value="00442" />
+      <option name="presentableId" value="LOCAL-00442" />
+      <option name="project" value="LOCAL" />
+      <updated>1640710973647</updated>
+    </task>
+    <task id="LOCAL-00443" summary="Working on NEW Good Morning">
+      <created>1644210776865</created>
+      <option name="number" value="00443" />
+      <option name="presentableId" value="LOCAL-00443" />
+      <option name="project" value="LOCAL" />
+      <updated>1644210776866</updated>
+    </task>
+    <task id="LOCAL-00444" summary="Working on NEW Good Morning">
+      <created>1645504434006</created>
+      <option name="number" value="00444" />
+      <option name="presentableId" value="LOCAL-00444" />
+      <option name="project" value="LOCAL" />
+      <updated>1645504434007</updated>
+    </task>
+    <task id="LOCAL-00445" summary="Working on NEW Good Morning">
+      <created>1645508120104</created>
+      <option name="number" value="00445" />
+      <option name="presentableId" value="LOCAL-00445" />
+      <option name="project" value="LOCAL" />
+      <updated>1645508120105</updated>
+    </task>
+    <task id="LOCAL-00446" summary="Coupon Feature added">
+      <created>1659206605980</created>
+      <option name="number" value="00446" />
+      <option name="presentableId" value="LOCAL-00446" />
+      <option name="project" value="LOCAL" />
+      <updated>1659206605982</updated>
+    </task>
+    <task id="LOCAL-00447" summary="Build Changes">
+      <created>1659208179422</created>
+      <option name="number" value="00447" />
+      <option name="presentableId" value="LOCAL-00447" />
+      <option name="project" value="LOCAL" />
+      <updated>1659208179422</updated>
+    </task>
+    <task id="LOCAL-00448" summary="Build Changes">
+      <created>1659208355704</created>
+      <option name="number" value="00448" />
+      <option name="presentableId" value="LOCAL-00448" />
+      <option name="project" value="LOCAL" />
+      <updated>1659208355704</updated>
+    </task>
+    <task id="LOCAL-00449" summary="Freemium Message Added and few Improvements">
+      <created>1667772303830</created>
+      <option name="number" value="00449" />
+      <option name="presentableId" value="LOCAL-00449" />
+      <option name="project" value="LOCAL" />
+      <updated>1667772303831</updated>
+    </task>
+    <task id="LOCAL-00450" summary="Freemium Message Added and few Improvements">
+      <created>1667772409857</created>
+      <option name="number" value="00450" />
+      <option name="presentableId" value="LOCAL-00450" />
+      <option name="project" value="LOCAL" />
+      <updated>1667772409857</updated>
+    </task>
+    <task id="LOCAL-00451" summary="All yours message added for BETA testing">
+      <created>1667931460457</created>
+      <option name="number" value="00451" />
+      <option name="presentableId" value="LOCAL-00451" />
+      <option name="project" value="LOCAL" />
+      <updated>1667931460457</updated>
+    </task>
+    <task id="LOCAL-00452" summary="Changes&#10;a) Clearance of unused variables.&#10;b) If settings not available get information.&#10;c) RegisterActivity gets data from database or InformationActivity&#10;d) WakeUpReceiver has no RescheduleAlarmsService function.&#10;e) Added try and catch for tts.&#10;f) Pending intent improvement.&#10;g) WakeUpReceiver class name changed.&#10;h) Comments removed from AlarmBroadcastReceiver.&#10;i) All yours dialog added.&#10;j) Manifest has some added permissions.&#10;k) Added some toast in RescheduleAlarmsService.&#10;l). WakeUpCheckDismissActivity to WeatherActivity for specific Android OS.">
+      <created>1671832806020</created>
+      <option name="number" value="00452" />
+      <option name="presentableId" value="LOCAL-00452" />
+      <option name="project" value="LOCAL" />
+      <updated>1671832806021</updated>
+    </task>
+    <task id="LOCAL-00453" summary="Error fixed at RegisterActivity from MainActivity">
+      <created>1671833703404</created>
+      <option name="number" value="00453" />
+      <option name="presentableId" value="LOCAL-00453" />
+      <option name="project" value="LOCAL" />
+      <updated>1671833703404</updated>
+    </task>
+    <task id="LOCAL-00454" summary="Error fixed at RegisterActivity from MainActivity">
+      <created>1671833711725</created>
+      <option name="number" value="00454" />
+      <option name="presentableId" value="LOCAL-00454" />
+      <option name="project" value="LOCAL" />
+      <updated>1671833711725</updated>
+    </task>
+    <task id="LOCAL-00455" summary="Delete Alarm Problem Fixed after alarm is off">
+      <created>1671834341211</created>
+      <option name="number" value="00455" />
+      <option name="presentableId" value="LOCAL-00455" />
+      <option name="project" value="LOCAL" />
+      <updated>1671834341211</updated>
+    </task>
+    <task id="LOCAL-00456" summary="Delete Alarm Problem Fixed after alarm is off">
+      <created>1671890820696</created>
+      <option name="number" value="00456" />
+      <option name="presentableId" value="LOCAL-00456" />
+      <option name="project" value="LOCAL" />
+      <updated>1671890820698</updated>
+    </task>
+    <task id="LOCAL-00457" summary="Splash Screen Animation improved">
+      <created>1671891231347</created>
+      <option name="number" value="00457" />
+      <option name="presentableId" value="LOCAL-00457" />
+      <option name="project" value="LOCAL" />
+      <updated>1671891231348</updated>
+    </task>
+    <task id="LOCAL-00458" summary="Bug Fixes">
+      <created>1673721809083</created>
+      <option name="number" value="00458" />
+      <option name="presentableId" value="LOCAL-00458" />
+      <option name="project" value="LOCAL" />
+      <updated>1673721809083</updated>
+    </task>
+    <task id="LOCAL-00459" summary="Volume will not decrease any way.">
+      <created>1673878506182</created>
+      <option name="number" value="00459" />
+      <option name="presentableId" value="LOCAL-00459" />
+      <option name="project" value="LOCAL" />
+      <updated>1673878506182</updated>
+    </task>
+    <task id="LOCAL-00460" summary="Swipe to delete">
+      <created>1674139144645</created>
+      <option name="number" value="00460" />
+      <option name="presentableId" value="LOCAL-00460" />
+      <option name="project" value="LOCAL" />
+      <updated>1674139144646</updated>
+    </task>
+    <task id="LOCAL-00461" summary="Major Bugs Fixed">
+      <created>1674852544731</created>
+      <option name="number" value="00461" />
+      <option name="presentableId" value="LOCAL-00461" />
+      <option name="project" value="LOCAL" />
+      <updated>1674852544731</updated>
+    </task>
+    <task id="LOCAL-00462" summary="Major Bugs Fixed and Wake Up Check Improved">
+      <created>1674860347761</created>
+      <option name="number" value="00462" />
+      <option name="presentableId" value="LOCAL-00462" />
+      <option name="project" value="LOCAL" />
+      <updated>1674860347761</updated>
+    </task>
+    <task id="LOCAL-00463" summary="Major Bugs Fixed and Wake Up Check Improved">
+      <created>1674862246830</created>
+      <option name="number" value="00463" />
+      <option name="presentableId" value="LOCAL-00463" />
+      <option name="project" value="LOCAL" />
+      <updated>1674862246830</updated>
+    </task>
+    <task id="LOCAL-00464" summary="Wake Up Check Improved">
+      <created>1674905640815</created>
+      <option name="number" value="00464" />
+      <option name="presentableId" value="LOCAL-00464" />
+      <option name="project" value="LOCAL" />
+      <updated>1674905640815</updated>
+    </task>
+    <task id="LOCAL-00465" summary="Alarm Toggle button changed">
+      <created>1675056017140</created>
+      <option name="number" value="00465" />
+      <option name="presentableId" value="LOCAL-00465" />
+      <option name="project" value="LOCAL" />
+      <updated>1675056017140</updated>
+    </task>
+    <task id="LOCAL-00466" summary="Alarm Toggle button changed">
+      <created>1675058456868</created>
+      <option name="number" value="00466" />
+      <option name="presentableId" value="LOCAL-00466" />
+      <option name="project" value="LOCAL" />
+      <updated>1675058456868</updated>
+    </task>
+    <task id="LOCAL-00467" summary="Alarm Toggle button changed">
+      <created>1675059150477</created>
+      <option name="number" value="00467" />
+      <option name="presentableId" value="LOCAL-00467" />
+      <option name="project" value="LOCAL" />
+      <updated>1675059150477</updated>
+    </task>
+    <task id="LOCAL-00468" summary="V9.6.1 updated on Google Play Store">
+      <created>1675072528539</created>
+      <option name="number" value="00468" />
+      <option name="presentableId" value="LOCAL-00468" />
+      <option name="project" value="LOCAL" />
+      <updated>1675072528539</updated>
+    </task>
+    <task id="LOCAL-00469" summary="V9.6.1 updated on Google Play Store">
+      <created>1675072833207</created>
+      <option name="number" value="00469" />
+      <option name="presentableId" value="LOCAL-00469" />
+      <option name="project" value="LOCAL" />
+      <updated>1675072833207</updated>
+    </task>
+    <option name="localTasksCounter" value="478" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Jayan/StudioProjects/Good-Morning/app/src/main/java/com/zerostic/goodmorning" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Coupon Feature added" />
+    <MESSAGE value="Build Changes" />
+    <MESSAGE value="Freemium Message Added" />
+    <MESSAGE value="Freemium Message Added and few Improvements" />
+    <MESSAGE value="All yours message added for BETA testing" />
+    <MESSAGE value="Changes&#10;a) Clearance of unused variables.&#10;b) If settings not available get information.&#10;c) RegisterActivity gets data from database or InformationActivity&#10;d) WakeUpReceiver has no RescheduleAlarmsService function.&#10;e) Added try and catch for tts.&#10;f) Pending intent improvement.&#10;g) WakeUpReceiver class name changed.&#10;h) Comments removed from AlarmBroadcastReceiver.&#10;i) All yours dialog added.&#10;j) Manifest has some added permissions.&#10;k) Added some toast in RescheduleAlarmsService." />
+    <MESSAGE value="Changes&#10;a) Clearance of unused variables.&#10;b) If settings not available get information.&#10;c) RegisterActivity gets data from database or InformationActivity&#10;d) WakeUpReceiver has no RescheduleAlarmsService function.&#10;e) Added try and catch for tts.&#10;f) Pending intent improvement.&#10;g) WakeUpReceiver class name changed.&#10;h) Comments removed from AlarmBroadcastReceiver.&#10;i) All yours dialog added.&#10;j) Manifest has some added permissions.&#10;k) Added some toast in RescheduleAlarmsService.&#10;l). WakeUpCheckDismissActivity to WeatherActivity for specific Android OS." />
+    <MESSAGE value="Error fixed at RegisterActivity from MainActivity" />
+    <MESSAGE value="Delete Alarm Problem Fixed after alarm is off" />
+    <MESSAGE value="Splash Screen Animation improved" />
+    <MESSAGE value="Bug Fixes" />
+    <MESSAGE value="Volume will not decrease any way." />
+    <MESSAGE value="Swipe to delete" />
+    <MESSAGE value="Major Bugs Fixed" />
+    <MESSAGE value="Major Bugs Fixed and Wake Up Check Improved" />
+    <MESSAGE value="Wake Up Check Improved" />
+    <MESSAGE value="Alarm Toggle button changed" />
+    <MESSAGE value="V9.6.1 updated on Google Play Store" />
+    <MESSAGE value="Bug Fixes and Improvements" />
+    <MESSAGE value="Added a Widget For Upcoming Alarm" />
+    <MESSAGE value="Fixes in wiwidget" />
+    <MESSAGE value="Fixes in widget" />
+    <MESSAGE value="Updating the Bar Code Scanner" />
+    <MESSAGE value="Camera Permission Added" />
+    <MESSAGE value="Updated Bar Code Scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Bar Code Scanner" />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.zerostic.goodmorning">
+          <value>
+            <CheckInfo lastCheckTimestamp="1740320153893" />
+          </value>
+        </entry>
+        <entry key="com.zerostic.goodmorning.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1740320153894" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/alarm_card"
+        app:cardBackgroundColor="@color/cardColor"
+        app:cardCornerRadius="15dp"
+        app:strokeColor="@color/cardStrokeColor"
+        app:strokeWidth="0.5dp"
+        android:layout_margin="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/item_alarm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/regular"
+                android:text="@string/_00_00"
+                android:textSize="28sp"
+                android:textColor="@color/defaultText"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_alarm_recurring"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:src="?attr/repeat"
+                android:visibility="gone"
+                android:layout_toEndOf="@+id/item_alarm_time"
+                android:contentDescription="@string/recurring" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_alarm_not_recurring"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:visibility="gone"
+                android:layout_toEndOf="@+id/item_alarm_time"
+                android:contentDescription="@string/recurring" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_alarm_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/method"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/regular"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/challenge_mode"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_toStartOf="@id/item_alarm_started"
+                    android:textColor="@color/defaultText"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/item_alarm_started"
+                    android:textColor="#000000"
+                    android:thumb="@drawable/theme_thumb_alarm"
+                    android:fontFamily="@font/regular"
+                    app:track="@drawable/theme_track_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"/>
+
+                <!--  <androidx.appcompat.widget.SwitchCompat
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/item_alarm_started"
+                      app:track="@drawable/theme_track_alarm"
+                      android:thumb="@drawable/theme_thumb_alarm"
+                      android:layout_centerHorizontal="true"/>-->
+
+                <TextView
+                    android:id="@+id/wuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/wake_up_check"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/regular"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/defaultText"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/item_alarm_recurringDays"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/repeat_off"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textSize="11sp"
+                android:textColor="@color/defaultText"/>
+
+            <TextView
+                android:id="@+id/item_alarm_title"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/item_alarm_recurringDays"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/regular"
+                android:text="@string/alarm"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/defaultText"/>
+
+            <ImageView
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:src="?attr/delete_icon"
+                android:contentDescription="@string/delete_button" />
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</RelativeLayout>

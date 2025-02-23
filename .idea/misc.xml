@@ -1,0 +1,30 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Main/app/src/main/res/layout/activity_contact_us.xml" value="0.22894736842105262" />
+        <entry key="..\:/Main/app/src/main/res/layout/activity_splash.xml" value="0.22671009771986972" />
+        <entry key="..\:/Main/app/src/main/res/layout/item_alarm.xml" value="0.12927631578947368" />
+        <entry key="..\:/Users/Jayan/StudioProjects/Good-Morning/app/src/main/res/layout/activity_closing.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/Jayan/StudioProjects/Good-Morning/app/src/main/res/layout/activity_create_alarm.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/Jayan/StudioProjects/Good-Morning/app/src/main/res/layout/fragment_tracker.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/Jayan/StudioProjects/Good-Morning/app/src/main/res/layout/snooze_bottom_sheet.xml" value="0.2" />
+        <entry key="..\:/Users/Jayan/StudioProjects/Good-Morning/app/src/main/res/layout/title_bottom_sheet.xml" value="0.15789473684210525" />
+        <entry key="..\:/Users/Jayant Anand Jha/AndroidStudioProjects/Good-Morning-NEW/app/src/main/res/layout/activity_login.xml" value="0.11247575953458307" />
+        <entry key="..\:/Users/Jayant Anand Jha/AndroidStudioProjects/Good-Morning-NEW/app/src/main/res/layout/activity_payment.xml" value="0.22894736842105262" />
+        <entry key="..\:/Users/Jayant Anand Jha/AndroidStudioProjects/Good-Morning-NEW/app/src/main/res/layout/coupon_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/Jayant Anand Jha/AndroidStudioProjects/Good-Morning-NEW/app/src/main/res/layout/payment_dialog.xml" value="0.22894736842105262" />
+        <entry key="..\:/Users/Jayant Anand Jha/AndroidStudioProjects/Good-Morning-NEW/app/src/main/res/layout/title_bottom_sheet.xml" value="0.22894736842105262" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK" />
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.036076475477971735" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

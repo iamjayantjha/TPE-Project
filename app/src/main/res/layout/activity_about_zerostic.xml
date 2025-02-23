@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AboutZerosticActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:transitionName="zerostic"
+        android:id="@+id/zerostic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/zerostic"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/Zerosticlogo" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gmLogo"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@id/zerostic"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/goodmorning_logo"
+        android:contentDescription="@string/gmlogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmLogo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/licenses"
+        android:background="@drawable/ripple"
+        android:fontFamily="@font/bold"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:textAllCaps="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/licensesBtn"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/licensesBtn"
+        android:layout_centerHorizontal="true"
+        android:text="@string/credits"
+        android:fontFamily="@font/bold"
+        android:textSize="20sp"
+        android:background="@drawable/ripple"
+        android:textAllCaps="true"
+        android:clickable="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/creditsBtn"
+        android:focusable="true" />
+
+
+    <TextView
+        android:id="@+id/termsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditsBtn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/bold"
+        android:text="@string/termsncondition"
+        android:textColor="@color/cursor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/privacyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creditsBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/bold"
+        android:text="@string/privacyPolicy"
+        android:textColor="@color/cursor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/copyright"
+        android:fontFamily="@font/regular"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/copyright"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"/>
+
+
+</RelativeLayout>

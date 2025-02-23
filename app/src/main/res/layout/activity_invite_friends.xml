@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activities.InviteFriendsActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/regular"
+        android:text="@string/invite"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/regular"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/whatsappTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/white"
+            android:text="@string/share_on_whatsapp" />
+
+        <ImageView
+            android:id="@+id/whatsappBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/whatsappTitle"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/whatsapp_logo"
+            android:src="@mipmap/ic_whatsapp" />
+
+
+        <TextView
+            android:id="@+id/instagramTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/whatsappBtn"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/white"
+            android:text="@string/share_on_instagram" />
+
+        <ImageView
+            android:id="@+id/instagramBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/instagramTitle"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/whatsapp_logo"
+            android:src="@mipmap/ic_instagram" />
+
+
+        <TextView
+            android:id="@+id/messengerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instagramBtn"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/white"
+            android:text="@string/share_on_messenger" />
+
+        <ImageView
+            android:id="@+id/messengerBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/messengerTitle"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/whatsapp_logo"
+            android:src="@mipmap/ic_messenger" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

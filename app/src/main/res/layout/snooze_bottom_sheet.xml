@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:background="@color/cardColor"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/box"
+            android:layout_marginTop="10dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="60dp"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/snoozeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/box"
+        app:singleSelection="true"
+        android:layout_marginBottom="15dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/twoMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_minutes"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/threeMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/twoMin"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                android:text="@string/_3_minutes"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/fourMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/threeMin"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                android:text="@string/_4_minutes"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/fiveMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/twoMin"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                android:text="@string/_5_minutes"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sixMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/fiveMin"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/twoMin"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                android:text="@string/_6_minutes"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sevenMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/fourMin"
+                android:layout_toEndOf="@+id/sixMin"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                android:layout_height="wrap_content"
+                android:text="@string/_7_minutes"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/eightMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/fiveMin"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                android:text="@string/_8_minutes"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/nineMin"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/sixMin"
+                android:layout_toEndOf="@+id/eightMin"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                android:text="@string/_9_minutes"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tenMin"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/sevenMin"
+                android:layout_toEndOf="@+id/nineMin"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_height="wrap_content"
+                app:chipSurfaceColor="@color/cardColor"
+                android:textColor="@color/defaultText"
+                android:text="@string/_10_minutes"/>
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/removeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:backgroundTint="@null"
+        android:layout_marginBottom="15dp"
+        android:text="Remove"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="30dp"
+        android:layout_below="@id/snoozeTime"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/regular"/>
+
+</RelativeLayout>

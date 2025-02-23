@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/solid_dark_color"
+    tools:context=".DismissActivities.ShakeDismissActivity">
+
+    <jp.shts.android.storiesprogressview.StoriesProgressView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xDirection"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/regular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_below="@+id/xDirection"
+        android:id="@+id/yDirection"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/regular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="15sp"
+        android:id="@+id/zDirection"
+        android:layout_below="@+id/yDirection"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/regular"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_below="@id/timer"
+        android:layout_above="@id/totalShakes"
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="shake.json"
+        android:layout_marginTop="15dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/totalShakes"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/bold"/>
+
+</RelativeLayout>

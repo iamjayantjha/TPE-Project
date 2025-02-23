@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:fontFamily="@font/regular"
+        android:layout_margin="15dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plans_offered"
+        android:layout_below="@id/heading"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/regular"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/cardStrokeColor"
+        app:strokeWidth="0.5dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardColor"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plan1"
+                    android:text="@string/rsplan1"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/plan2"
+                    android:fontFamily="@font/regular"
+                    android:text="@string/rsplan2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="15dp"/>
+
+
+            </RadioGroup>
+
+
+
+            <Button
+                android:layout_below="@id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay"
+                android:fontFamily="@font/regular"
+                android:id="@+id/payBtn"
+                android:textColor="@color/black"
+                android:elevation="0dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/white"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <nl.dionsegijn.konfetti.KonfettiView
+            android:id="@+id/konfettiView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_below="@id/card1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/cardStrokeColor"
+        app:strokeWidth="0.5dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardColor"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/planDetails"
+                android:fontFamily="@font/regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentPlan"
+                android:layout_below="@+id/planDetails"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastPayDate"
+                android:layout_below="@+id/currentPlan"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nextPayDate"
+                android:layout_below="@+id/lastPayDate"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lifeTimeMembershipCard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/card2"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/cardColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/wakeUpCheckTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:text="@string/life_time_membership"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/nextImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="@string/nextpage"
+                android:src="@drawable/ic_next_grey" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/couponBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@id/lifeTimeMembershipCard"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/have_a_coupon_code"
+            android:textColor="@color/refundColor"
+            android:textSize="18sp" />
+
+
+
+        <TextView
+        android:id="@+id/refundBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ripple"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_below="@id/couponBtn"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/refundPolicy"
+        android:textColor="@color/refundColor"
+        android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/item_alarm_time"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:fontFamily="@font/regular"
+                android:textSize="36sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_alarm_time"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/regular"
+        android:id="@+id/alarmDismissMethod" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarmDismissMethod"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/alarmTone"
+        android:fontFamily="@font/regular" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Activities.SplashActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/gmLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/good_morning_logo" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="@string/app_name"
+        android:layout_marginStart="30dp"
+        android:visibility="gone"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/defaultText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/zerostic"
+        android:layout_centerHorizontal="true"
+        android:textColor="#AD464646"
+        android:text="from"
+        android:textSize="18sp"
+        android:fontFamily="@font/bold"/>
+
+    <ImageView
+        android:id="@+id/zerostic"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/zerostic"/>
+
+</RelativeLayout>

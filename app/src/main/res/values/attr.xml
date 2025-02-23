@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnalogClock">
+        <attr name="borderColor" format="reference"/>
+        <attr name="clockBackgroundColor" format="reference"/>
+        <attr name="hourColor" format="reference"/>
+        <attr name="minuteColor" format="reference"/>
+        <attr name="secondColor" format="reference"/>
+        <attr name="showSecondPointer" format="boolean"/>
+        <attr name="showNumbers" format="boolean"/>
+        <attr name="numbersColor" format="reference"/>
+        <attr name="borderStrokeWidth" format="integer"/>
+        <attr name="hourStrokeWidth" format="integer"/>
+        <attr name="minuteStrokeWidth" format="integer"/>
+        <attr name="secondStrokeWidth" format="integer"/>
+    </declare-styleable>
+    <attr name="plus_icon" format="reference" />
+    <attr name="settings_icon" format="reference" />
+    <attr name="delete_icon" format="reference" />
+    <attr name="preview_icon" format="reference" />
+    <attr name="seven_icon" format="reference" />
+    <attr name="eight_icon" format="reference" />
+    <attr name="nine_icon" format="reference" />
+    <attr name="six_icon" format="reference" />
+    <attr name="five_icon" format="reference" />
+    <attr name="four_icon" format="reference" />
+    <attr name="one_icon" format="reference" />
+    <attr name="two_icon" format="reference" />
+    <attr name="three_icon" format="reference" />
+    <attr name="done_icon" format="reference" />
+    <attr name="zero_icon" format="reference" />
+    <attr name="clear_icon" format="reference" />
+    <attr name="vibrate_icon" format="reference" />
+    <attr name="location_icon" format="reference" />
+    <attr name="none_icon" format="reference" />
+    <attr name="email_icon" format="reference" />
+    <attr name="user_icon" format="reference" />
+    <attr name="phone_icon" format="reference" />
+    <attr name="cred_icon" format="reference" />
+    <attr name="up_icon" format="reference" />
+    <attr name="call_icon" format="reference" />
+    <attr name="zerostic_logo" format="reference" />
+    <attr name="speech_icon" format="reference" />
+    <attr name="add_icon" format="reference" />
+    <attr name="sleep_icon" format="reference" />
+    <attr name="repeat" format="reference" />
+    <attr name="notRepeat" format="reference" />
+    <attr name="alarm" format="reference" />
+    <attr name="alarm_canceled" format="reference" />
+    <attr name="userIcon" format="reference" />
+    <attr name="expand" format="reference" />
+    <attr name="ringAlarm" format="reference" />
+    <attr name="audioOn" format="reference" />
+    <attr name="audioOFF" format="reference" />
+    <attr name="upload" format="reference" />
+    <attr name="remove" format="reference" />
+</resources>
