@@ -341,8 +341,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="add_alarm" />
-                            <entry key="sourceFile" value="$USER_HOME$/Desktop/Good Morning Extra Drawable/add_alarm.svg" />
+                            <entry key="outputName" value="sleep_time" />
+                            <entry key="sourceFile" value="$USER_HOME$/Desktop/TPE Assets/Sleep Time.svg" />
                           </map>
                         </option>
                       </PersistentState>

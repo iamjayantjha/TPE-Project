@@ -31,7 +31,10 @@ public class AppIntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_intro);
-        Utils.blackIconStatusBar(AppIntroActivity.this, R.color.background);
+    }
+}
+
+       /* Utils.blackIconStatusBar(AppIntroActivity.this, R.color.background);
         mSlider = findViewById(R.id.slider);
         mDotsLayout = findViewById(R.id.dots);
         sliderAdapter = new SliderAdapter(this);
@@ -104,4 +107,4 @@ public class AppIntroActivity extends AppCompatActivity {
 
         }
     };
-}
+}*/

@@ -231,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
         Date c = rightNow.getTime();
         SimpleDateFormat df = new SimpleDateFormat("dd", Locale.getDefault());
         String formattedDate = df.format(c);
-        if ((mCurrentUser!=null)){
+      /*  if ((mCurrentUser!=null)){
             changeUserInfo();
             changeUserSettings();
             //changeUserPayDetails();
@@ -271,13 +271,14 @@ public class MainActivity extends AppCompatActivity {
                 navigation.setText(quote);
             }, 15000);
             checkUpdates();
-        }else {
+        }
+        else {
             Intent startIntent = new Intent(MainActivity.this, LoginActivity.class);
             startIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(startIntent);
             overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
             finish();
-        }
+        }*/
 
     }
 
