@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
         count = preferences.getInt("count",0);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,new AlarmsListFragment()).commit();
 
-       FirebaseCrashlytics.getInstance().setUserId(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid());
+//       FirebaseCrashlytics.getInstance().setUserId(Objects.requireNonNull(FirebaseAuth.getInstance().getCurrentUser()).getUid());
        
        /* Get FCm Token */
        /*Token FirebaseMessaging.getInstance().getToken().addOnCompleteListener(task -> {

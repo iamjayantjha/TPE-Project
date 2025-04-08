@@ -1,36 +1,27 @@
 {
   "project_info": {
-    "project_number": "238326829945",
-    "project_id": "good-morning-zerosticinc",
-    "storage_bucket": "good-morning-zerosticinc.appspot.com"
+    "project_number": "54177728360",
+    "firebase_url": "https://tpe-project-iiit-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tpe-project-iiit",
+    "storage_bucket": "tpe-project-iiit.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:238326829945:android:385e20d1f6d38b647f95a8",
+        "mobilesdk_app_id": "1:54177728360:android:74f37950f2b24b2ef078dd",
         "android_client_info": {
           "package_name": "com.zerostic.goodmorning"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "238326829945-5qb2n0ingt7f494rlsrna5jr1hboui7o.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDkMYzFfXJf2K8uz43daA7zqxuJ6Z6f6ag"
+          "current_key": "AIzaSyB1uIx3I9BuQz6ScKRBxKYHVrHiwwJQbAk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "238326829945-5qb2n0ingt7f494rlsrna5jr1hboui7o.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

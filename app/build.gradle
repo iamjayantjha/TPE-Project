@@ -11,11 +11,11 @@ android {
     buildFeatures {
         viewBinding true
     }
-    compileSdk 34
+    compileSdk 35
     defaultConfig {
         applicationId "com.zerostic.goodmorning"
         minSdkVersion 23
-        targetSdkVersion 34
+        targetSdkVersion 35
         multiDexEnabled = true
         versionCode 67
         versionName "${verMajor}.${verMedium}.${verMinor}"

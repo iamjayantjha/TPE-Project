@@ -57,7 +57,7 @@ public class SplashActivity extends AppCompatActivity {
             gmLogo.startAnimation(animation);
             appName.startAnimation(animation2);
         },550);
-        if (mCurrentUser==null){
+        /*if (mCurrentUser==null){
             new Handler().postDelayed(() -> {
                 Intent mainIntent = new Intent(SplashActivity.this, LoginActivity.class);
                 mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -65,7 +65,7 @@ public class SplashActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.splash_in, R.anim.splash_out);
                 SplashActivity.this.finish();
             }, SPLASH_DISPLAY_LENGTH);
-        }else {
+        }else {*/
             new Handler().postDelayed(() -> {
                 Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
                 mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -73,7 +73,7 @@ public class SplashActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.splash_in, R.anim.splash_out);
                 SplashActivity.this.finish();
             }, SPLASH_DISPLAY_LENGTH);
-        }
+       // }
     }
 
     private void readUserSettings(){
